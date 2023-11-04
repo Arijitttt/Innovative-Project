@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arijit">
+    <meta name="description" content="This will predict the genere of an article">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/home.css">
+    <title>Genere Predictor</title>
+    <style>
+      body{
+    background-color: lightgoldenrodyellow; 
+    width:90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 8px;
+}
+div{
+    background: linear-gradient(to bottom,grey, rgba(18, 139, 186, 0.658));
+    display: inline-block;
+    color: aliceblue;        
+    font-size: 3vw;
+    text-align: center;                
+    padding: 3vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 1.5 1;
+}
+h1{
+    color: rgb(235, 217, 217);
+    font-size: 3rem;
+}       
+textarea{
+    width: 100%;
+    height : 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 6px;
+    background-color: rgb(192, 229, 247);
+    box-sizing: border-box;
+    resize: none;
+}
+input[type=submit]
+{
+    background-color: #61afce;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Genere Predictor</h1>
+        <form action="{{url_for('result')}}" method="POST">
+            <textarea name="message" placeholder="enter your article" required>{{myarticle}}</textarea><br>
+            <input type="submit" class="enter" value="predict">
+        </form>
+        <h4>{{text}}</h4>
+    </div>    
+</body>
+<script>
+
+</script>
+</html>
