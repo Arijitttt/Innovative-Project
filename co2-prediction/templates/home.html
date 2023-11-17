@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Predicting CO2 Emissions of Cars</h2>
+    <form action="{{url_for('home')}}" method="POST">
+        <b><label>Engine Size:</label>
+        <input type="text", name='a', placeholder="Min: 1 Max: 7"></p><br>
+        <label>Cylinder: </label>
+        <input type="text", name='b', placeholder="Min: 2 Max: 10"></p><br>
+        <label>Fuel Consumption: </label>
+        <input type="text", name='c', placeholder="Min: 0 Max: 30"></p><br>
+        <input type="submit" value="predict">
+        </b>
+    </form>
+    <p>{{prediction_text}}</p>
+</body>
+</html>
