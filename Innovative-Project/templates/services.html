@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    * {
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+  <body>
+    <nav class="flex justify-between items-center m-6">
+      <div class="text-[20px] font-bold text-[#00BD51] cursor-pointer">INNO WHEELS</div>
+      <div class="text-[20px] font-bold">
+        <a href="/Innovative-Project/templates/landing.html" class=" hover:text-[#00BD51]">HOME</a>
+      </div>
+
+      <div>
+        <button
+          class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white"
+        >
+          Get Help
+        </button>
+      </div>
+    </nav>
+    <div class="text-6xl font-semibold text-center py-6">
+      Choose what you want to know!
+    </div>
+
+    <section class="flex items-center justify-center">
+      <div class="flex flex-row justify-center items-center gap-20">
+        <a href="/Innovative-Project/templates/navigation.html">
+          <div class="flex flex-col gap-6 items-center">
+            <div
+              class="w-[520px] h-[520px] rounded-full shadow-xl flex justify-center items-center hover:scale-105"
+            >
+              <img
+                src="/Innovative-Project/static/assets/service1Img.webp"
+                alt=""
+                class="w-[400px] h-[300px]"
+              />
+            </div>
+            <div class="font-medium text-[#00bd51] text-3xl">
+              Navigation
+              <i class="bx bxs-navigation" style="color: #00bd51"></i>
+            </div>
+          </div>
+        </a>
+        <a href="/Innovative-Project/templates/prediction.html">
+          <div class="flex flex-col gap-6 items-center">
+            <div
+              class="w-[520px] h-[520px] rounded-full shadow-xl flex justify-center items-center hover:scale-105"
+            >
+              <img
+                src="/Innovative-Project/static/assets/service2Img.webp"
+                alt=""
+                class="w-[400px] h-[300px]"
+              />
+            </div>
+            <div class="font-medium text-[#00bd51] text-3xl">
+              CO2 Prediction <i class="bx bxs-cloud" style="color: #00bd51"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
