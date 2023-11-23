@@ -15,4 +15,12 @@ def member():
     return jsonify(data)
 
 
+
+@app.route("/third")
+def third():
+    return render_template('3rd Page.html')
+
+@app.route("/fourth")
+def fourth():
+    return render_template('4th Page.html')
 app.run(debug=True)
