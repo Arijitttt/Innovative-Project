@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+    * {
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Work Sans', sans-serif;
+    }
+    .mainBody {
+      width: 100vw;
+      height: 70vh;
+
+      background-image: url("../static/assets/co2Bg.webp");
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+  </style>
+<body>
+    <nav class="flex justify-between items-center m-6">
+        <div class="text-[20px] font-bold text-[#00BD51] cursor-pointer">INNO WHEELS</div>
+        <div class="text-[20px] font-bold">
+          <a href="/services" class=" hover:text-[#00BD51]">SERVICES</a>
+        </div>
+  
+        <div>
+          <button
+            class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white"
+          >
+            Get Help
+          </button>
+        </div>
+      </nav>
+      <div class="text-6xl font-semibold text-center py-6 text-[#00bd51]">
+        CO2 Prediction <i class='bx bxs-cloud' style='color:#00bd51' ></i>
+      </div>
+
+      <!-- data prediction -->
+      <section class="mainBody flex flex-row justify-evenly items-center">
+        <div class="flex flex-col justify-center items-center gap-6">
+          <div class="font-medium text-[#00bd51] text-3xl">Data <i class='bx bx-stats' style='color:#00bd51' ></i></div>
+          <div class="w-[600px] h-[400px] shadow-xl rounded-xl hover:scale-105 bg-white">
+              <!-- show the data here -->
+          </div>
+        </div>
+        <div class="w-[300px] h-[450px] bg-white shadow-xl rounded-xl hover:scale-105 bg-white">
+          <form action="" class="flex flex-col m-6 p-4 justify-center items-start gap-5">
+              <label for="" class="text-2xl">Label</label>
+              <input type="text" name="" id="" class="outline outline-1 outline-[#00bd51] rounded-xl h-[35px]">
+              <label for="" class="text-2xl">Label</label>
+              <input type="text" name="" id="" class="outline outline-1 outline-[#00bd51] rounded-xl h-[35px]">
+              <label for="" class="text-2xl">Label</label>
+              <input type="text" name="" id="" class="outline outline-1 outline-[#00bd51] rounded-xl h-[35px]">
+              <button class="bg-[#00bd51] text-center text-3xl text-white w-[150px] h-[50px] rounded-full">Show</button>
+          </form>
+        </div>
+      </section>
+</body>
+</html>
