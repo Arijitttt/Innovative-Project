@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Page</title>
+</head>
+<style>
+    body {
+        margin: auto;
+        padding: 30px;
+        font-size: 25px;
+        background-image: url('people 1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 60%
+    }
+
+    .topleft {
+        position: absolute;
+        left:20px;
+        top: 20px;
+        display: inline-block;
+        font-size:35px; 
+    }
+
+    .left1 {
+        position: absolute;
+        left: 250px;
+        top: 220px;
+        display: inline-block;
+    }
+    .mid { 
+        display: block;
+        position: absolute;
+        left: 550px;
+        top: 70px;
+        width: 33%;
+        margin: 35px auto;
+    
+    }
+    .left1 b{
+        color: rgb(75, 178, 75);
+        font-size: 40px;
+    }
+    .mid b{
+        color: rgb(75, 178, 75);
+        font-size: 80px;
+    }
+
+
+.right {
+    position: absolute;
+    right: 20px; 
+    top: 20px; 
+    display: inline-block;
+    border: 1px solid green;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjusted padding */
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+
+    .container {
+            position: absolute;
+            right: 250px; 
+            top: 250px; 
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: -10px 10px rgb(158, 151, 151);
+        }
+
+        .btn {
+            background-color: rgb(182, 220, 182);
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid green;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .container button {
+            display: block;
+            width: 43%; /* Adjusted width */
+            margin: auto; /* Added margin-top */
+            background-color: green;
+        }
+
+        .formgroup {
+            margin-bottom: 15px; /* Adjusted margin */
+        }
+
+        .formgroup input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid green;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="topleft">
+            <b>INNO WHEELS</b>
+        </div>
+        <div class="mid">
+        <b>Navigation</b> <img src="navigation-solid-24.png" alt="">
+        </div>
+        <div class="right btn">
+    <ul class="navbar">
+        <li><a href="#">Get Help</a></li>
+    </ul>
+</div>
+    </header>
+    <div class="left1">
+        <b>Routes</b>
+        <img src="map-solid-24.png" alt="">
+        <div>
+            <img src="Route IMG.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="formgroup">
+                <label for="from">From</label>
+                <input type="text" id="from" name="from">
+            </div>
+            <div class="formgroup">
+                <label for="to">To</label>
+                <input type="text" id="to" name="to">
+            </div>
+            <button class="btn">
+                Show
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
