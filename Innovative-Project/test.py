@@ -16,11 +16,11 @@ def member():
 
 
 
-@app.route("/third")
+@app.route("/third") 
 def third():
-    return render_template('3rd Page.html')
+    return render_template('3rd Page (main).html')
 
 @app.route("/fourth")
 def fourth():
-    return render_template('4th Page.html')
+    return render_template('4th Page (main).html')
 app.run(debug=True)
