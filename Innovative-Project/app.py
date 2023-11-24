@@ -1,5 +1,6 @@
 from flask import Flask, render_template,jsonify,redirect,request
 from flask_cors import CORS
+from chat import get_response
 import pickle
 import numpy as np
 
@@ -44,6 +45,17 @@ def predict():
     arr = np.array([[data1, data2, data3]])
     pred = model.predict(arr)
     return render_template("prediction.html", prediction_text = "The Carbon Emission of Car is %2d kt" %(pred))
+
+
+
+@app.post("/predict")
+def chatbot():
+    text = request.get_json().get("message")
+    # TODO: check if text is valid
+    response = get_response(text)
+    message = {"answer": response}
+    return jsonify(message)
+
 
 if __name__=="__main__":
     app.run(debug=True)

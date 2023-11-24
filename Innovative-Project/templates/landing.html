@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INNO WHEELS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../static/style.css" />
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
@@ -27,7 +28,33 @@ background: linear-gradient(218deg, rgba(230,255,255,1) 0%, rgba(0,189,81,1) 100
             INNO WHEELS
         </div>
         <div>
-            <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button>
+            <div class="container">
+                <div class="chatbox">
+                    <div class="chatbox__support">
+                        <div class="chatbox__header">
+                            <div class="chatbox__image--header">
+                                <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                            </div>
+                            <div class="chatbox__content--header">
+                                <h4 class="chatbox__heading--header">Chat support</h4>
+                                <p class="chatbox__description--header">Hi. My name is Inno-Wheels. How can I help you?</p>
+                            </div>
+                        </div>
+                        <div class="chatbox__messages">
+                            <div></div>
+                        </div>
+                        <div class="chatbox__footer">
+                            <input type="text" placeholder="Write a message...">
+                            <button class="chatbox__send--footer send__button">Send</button>
+                        </div>
+                    </div>
+                    <div class="chatbox__button">
+                        <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button>
+                    </div>
+                </div>
+            </div>
+      
+            <!-- <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button> -->
         </div>
     </nav>
     <section>
@@ -48,5 +75,6 @@ background: linear-gradient(218deg, rgba(230,255,255,1) 0%, rgba(0,189,81,1) 100
         </div>
         
     </section>
+    <script src="../static/script.js"></script>
 </body>
 </html>
