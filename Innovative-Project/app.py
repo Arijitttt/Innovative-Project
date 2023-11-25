@@ -33,6 +33,9 @@ def prediction():
 @app.route("/services")
 def services():
     return render_template('services.html')
+@app.route("/map")
+def map():
+    return render_template('map.html')
 @app.route("/landing")
 def landingred():
     return redirect('/services')
