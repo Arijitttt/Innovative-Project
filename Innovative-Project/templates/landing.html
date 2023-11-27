@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INNO WHEELS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../static/style.css" />
-</head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-*{
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-}
-.sidebar{
-    background: rgb(230,255,255);
-background: linear-gradient(218deg, rgba(230,255,255,1) 0%, rgba(0,189,81,1) 100%);
-}
-
-</style>
-<body>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+    * {
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Work Sans", sans-serif;
+    }
+    .sidebar {
+      background: rgb(230, 255, 255);
+      background: linear-gradient(
+        218deg,
+        rgba(230, 255, 255, 1) 0%,
+        rgba(0, 189, 81, 1) 100%
+      );
+    }
+  </style>
+  <body>
     <nav class="flex justify-between items-center m-6">
-        <div class="text-[20px] font-bold text-[#00BD51] cursor-pointer">
-            INNO WHEELS
-        </div>
-        <div>
-            <div class="container">
-                <div class="chatbox">
-                    <div class="chatbox__support">
-                        <div class="chatbox__header">
-                            <div class="chatbox__image--header">
-                                <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
-                            </div>
-                            <div class="chatbox__content--header">
-                                <h4 class="chatbox__heading--header">Chat support</h4>
-                                <p class="chatbox__description--header">Hi. My name is Inno-Wheels. How can I help you?</p>
-                            </div>
-                        </div>
-                        <div class="chatbox__messages">
-                            <div></div>
-                        </div>
-                        <div class="chatbox__footer">
-                            <input type="text" placeholder="Write a message...">
-                            <button class="chatbox__send--footer send__button">Send</button>
-                        </div>
-                    </div>
-                    <div class="chatbox__button">
-                        <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button>
-                    </div>
+      <div class="text-[20px] font-bold text-[#00BD51] cursor-pointer">
+        INNO WHEELS
+      </div>
+      <div>
+        <div class="container">
+          <div class="chatbox">
+            <div class="chatbox__support">
+              <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                  <img
+                    src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                    alt="image"
+                  />
                 </div>
+                <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">Chat support</h4>
+                  <p class="chatbox__description--header">
+                    Hi. My name is Inno-Wheels. How can I help you?
+                  </p>
+                </div>
+              </div>
+              <div class="chatbox__messages">
+                <div></div>
+              </div>
+              <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message..." />
+                <button class="chatbox__send--footer send__button">Send</button>
+              </div>
             </div>
-      
-            <!-- <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button> -->
+            <div class="chatbox__button">
+              <button
+                class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white"
+              >
+                Get Help
+              </button>
+            </div>
+          </div>
         </div>
+
+        <!-- <button class="bg-[#CEFDD5] w-[104px] h-[34px] rounded-[17px] font-medium hover:bg-[#00bd51] hover:text-white">Get Help</button> -->
+      </div>
     </nav>
     <section>
-        <div class="relative -z-50">
-            <div class="sidebar absolute w-[350px] h-[95vh]"></div>
-            <div class=" absolute flex flex-row justify-between items-center gap-20">
-                <div class="w-[660px] h-[560px] flex justify-center m-10">
-                    <img src="../static/assets/landingImg.webp" alt="">
-                </div>
-                <div class="flex flex-col justify-evenly items-start mx-20 gap-10">
-                    <div class="text-[#00BD51] text-4xl font-semibold font-['Work Sans']">Lorem ipsum</div>
-                    <div class="w-[362px] h-[75px] text-black text-2xl font-normal font-['Work Sans']">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
-                    <a href="/services">
-                    <button class="w-[285px] h-[50px] bg-[#00BD51] rounded-lg text-2xl text-white text-center hover:scale-105">Get Started</button>
-                    </a>
-                </div>
+      <div class="relative -z-50">
+        <div class="sidebar absolute w-[350px] h-[95vh]"></div>
+        <div class="absolute flex flex-row justify-between items-center gap-20">
+          <div class="w-[660px] h-[560px] flex justify-center m-10">
+            <img src="../static/assets/landingImg.webp" alt="" />
+          </div>
+          <div class="flex flex-col justify-evenly items-start mx-20 gap-10">
+            <div
+              class="text-[#00BD51] text-4xl font-semibold font-['Work Sans']"
+            >
+              Inno Wheels
             </div>
+            <div
+              class="w-[362px] h-[262px] text-black text-2xl font-normal font-['Work Sans']"
+            >
+              Introducing to you, a one stop website to not just provide you
+              with the shortest navigable route but also help you keep your
+              car's CO2 emission in check! This is our take on making your quad
+              or pair of wheels run fast and friendly on our innovative!
+            </div>
+            <a href="/services">
+              <button
+                class="w-[285px] h-[50px] bg-[#00BD51] rounded-lg text-2xl text-white text-center hover:scale-105"
+              >
+                Get Started
+              </button>
+            </a>
+          </div>
         </div>
-        
+      </div>
     </section>
     <script src="../static/script.js"></script>
-</body>
+  </body>
 </html>

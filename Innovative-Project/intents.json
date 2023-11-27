@@ -1,84 +1,98 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "co2 estimation",
+      "patterns": [
+        "How can I estimate my CO2 emissions?",
+        "say about co2 emission",
+        "Process of co2 emission"
+      ],
+      "responses": [
+        "There are several ways to estimate your CO2 emissions. One way is to use a carbon footprint calculator, which can take into account your lifestyle choices, such as your home energy consumption, transportation habits, and food choices. Another way is to track your individual emissions over time, such as by keeping a log of your energy use and transportation distances."
+      ]
+    },
+    {
+      "tag": "co2 estimation",
+      "patterns": [
+        "What are some tips for reducing my CO2 emissions?"
+      ],
+      "responses": [
+        "There are many things you can do to reduce your CO2 emissions. Here are a few tips: Choose renewable energy sources: Switch to renewable energy sources for your home and business, such as solar or wind power. Drive less: Walk, bike, or take public transportation whenever possible. If you must drive, carpool or take public transit.Eat less meat: Meat production is a major source of greenhouse gas emissions. Consider reducing your meat consumption or choosing plant-based alternatives.Save energy at home: Make sure your appliances and electronics are Energy Star certified. Turn off lights and appliances when you're not using them."
+      ]
+    },
+    {
+      "tag": "challenges",
+      "patterns": [
+        "What are some tips for reducing my CO2 emissions?"
+      ],
+      "responses": [
+        "There are a few challenges to reducing CO2 emissions, including: \nCost: Some energy-efficient and renewable energy options can be more expensive upfront. Convenience: It can be inconvenient to make changes to your lifestyle, such as driving less or eating less meat. Government policies: Some governments are not doing enough to support the transition to a low-carbon economy."
+      ]
+    },
+    {
+      "tag": "navigation",
+      "patterns": [
+        "How can I find directions to a specific location?"
+      ],
+      "responses": [
+        "You can find directions to a specific location using a variety of online and offline mapping tools. Online mapping tools, such as Google Maps and Apple Maps, can provide real-time traffic information and allow you to save your routes for future use. Offline mapping apps, such as Maps.me and Osmand, can be useful for navigation when you don't have an internet connection."
+      ]
+    }
+  ]
+}
